@@ -8,13 +8,12 @@ import NavBarLinks from "./navbar-links";
 
 import styles from './custom.module.css';
 
-import './navbar.css'
-
 import useScreenSize from '../utils/use-screen-size';
 import NavBarUpperNav from "./navbar-upper-nav";
 
 const NavBar: FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -45,28 +44,13 @@ const NavBar: FC = () => {
   }, [lastScrollY]);
 
   const screenSize = useScreenSize();
-  
-  useEffect(() => {
-      if (screenSize.width >= 768 && menuOpen) {
-          setMenuOpen(false);
-      }
-  }, [screenSize.width, menuOpen]);
-
-  useEffect(() => {
-    if (screenSize.width >= 768 && menuOpen) {
-        setMenuOpen(false);
-    }
-  }, [screenSize.width]);
-
-  const menuToggleHandler = () => {
-      setMenuOpen((p) => !p);
-  };
 
   return (
     <>
       <Navbar 
+        expanded={expanded}
         sticky="top"
-        expand={screenSize.width <= 768 ? 'xl' : 'md'}        
+        expand='md'        
         className={`bg-body ${screenSize.width > 768 ? (isHovering && lastScrollY > 1 ? styles.xzxcMod : styles.xzxc) : styles.xzxc}`}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -74,7 +58,7 @@ const NavBar: FC = () => {
         <Container fluid className={styles.xcxb}>
           <Nav className={styles.xcxn}>
             <NavBarUpperNav />
-            <Navbar.Toggle data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <Navbar.Toggle onClick={() => setExpanded(true)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_872_223)">
                   <path d="M1.73333 21.3334H22.2667C22.4612 21.3334 22.6477 21.2561 22.7852 21.1186C22.9227 20.9811 23 20.7945 23 20.6C23 20.4055 22.9227 20.219 22.7852 20.0815C22.6477 19.944 22.4612 19.8667 22.2667 19.8667H1.73333C1.53884 19.8667 1.35231 19.944 1.21479 20.0815C1.07726 20.219 1 20.4055 1 20.6C1 20.7945 1.07726 20.9811 1.21479 21.1186C1.35231 21.2561 1.53884 21.3334 1.73333 21.3334Z" fill="#1E1E1E" stroke="#1E1E1E" strokeWidth="0.44"/>
@@ -105,9 +89,9 @@ const NavBar: FC = () => {
         {
           screenSize.width > 768 ? 
             <></> : 
-              <Navbar.Collapse id="navbarSupportedContent">
-                <Nav className={styles.subBottomNav}>
-                  <NavBarLinks link_type="COL"/>
+              <Navbar.Collapse className={styles.topPadding} id="navbarSupportedContent">
+                <Nav navbarScroll className={styles.subBottomNav}>
+                  <NavBarLinks isCollapsed={true} handleExpand={() => setExpanded(false)} link_type="COL"/>
                 </Nav>
               </Navbar.Collapse>
         }

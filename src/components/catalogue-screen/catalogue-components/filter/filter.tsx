@@ -1,9 +1,8 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 
 import FilterPills from "./filter-pills";
 
 import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button';
 
 import styles from '../../../styles/filter/filter.module.css'
 

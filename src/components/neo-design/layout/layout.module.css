@@ -103,6 +103,8 @@
 @media only screen and (min-width: 726px) {
     .tonightContainer {
         max-width: 694px;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
     .tonightWrapper {
         gap: 100px;

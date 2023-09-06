@@ -2,17 +2,13 @@ import { FC } from "react";
 
 import './test.css'
 
-import TonightInput from "../UI/Components/input/tonight-input";
-import TonightButton from "../UI/Components/button/tonight-button";
+import DropDownLink from "./neo-design/testdropdown/dropdown";
 
 const TestScreen: FC = () => {
 
-    return <div className="test-container">
-        <div className='testContainer'>
-            <TonightInput />
-        </div>
-        <div className='testContainer'>
-            <TonightButton text="Показать 130 товаров"/>
+    return <div style={{marginTop: 200, marginBottom: 200}}>
+        <div className="test-container">
+            <DropDownLink />
         </div>
     </div>
 }

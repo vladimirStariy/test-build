@@ -5,7 +5,6 @@ import styles from './catalogue.screen.module.css'
 import useScreenSize from "../../utils/use-screen-size";
 import CatalogueHeader from "./Components/catalogue-header/catalogue.header";
 import ProductFilter from "../catalogue-screen/Components/filter/filter";
-import CatalogueProducts from "./Components/products/catalogue.products";
 import ProductGrid from "../product-grid/product.grid";
 import { Link } from "react-router-dom";
 

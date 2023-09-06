@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import Offcanvas from "react-bootstrap/Offcanvas";
 import ProductFilter from './filter';
 

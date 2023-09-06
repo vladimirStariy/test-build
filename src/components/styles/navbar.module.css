@@ -36,7 +36,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .linkFont {
@@ -50,4 +51,9 @@
 
 .navBar {
     background-color: white;
+}
+
+.fullwidt {
+    justify-content: center;
+    width: 100%;
 }

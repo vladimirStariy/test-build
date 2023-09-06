@@ -13,6 +13,8 @@ import ForOrderScreen from './neo-design/for-order-screen/for.order.screen';
 import DiscountScreen from './neo-design/discount-screen/discount.screen';
 import NoveltiesScreen from './neo-design/novelties-screen/novelties.screen';
 import ProfileScreen from './neo-design/profile-screen/profile.screen';
+import TestScreen from './test-screen';
+import OrderingScreen from './neo-design/ordering-screen/ordering.screen';
 
 const AppRouter: FC = () => {
   const {pathname} = useLocation(); 
@@ -21,7 +23,7 @@ const AppRouter: FC = () => {
     window.scrollTo(0, 0);
   }, [pathname])
 
-  return (
+  return <>
     <Routes>
         <Route element={<MainScreen />} path='/'/>
         <Route element={<LoginScreen />} path='/login' />
@@ -32,12 +34,15 @@ const AppRouter: FC = () => {
         <Route element={<DiscountScreen />} path='/stock' />
         <Route element={<NoveltiesScreen />} path='/novelties' />
         <Route element={<ProfileScreen />} path='/profile' />
+        <Route element={<OrderingScreen />} path='/ordering' />
+
+        <Route element={<TestScreen />} path='/test' />
 
         <Route element={<MainScreen2 />} path='/mainneo' />
 
         <Route path='*' element={<MainScreen />} />
     </Routes>
-  )
+  </>
 }
 
 export default AppRouter;
