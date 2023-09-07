@@ -36,19 +36,19 @@ const DropDownLink: FC<IDropdown> = (props) => {
                     <div className={styles.categoriesContainer}>
                         <div className={styles.categoriesBlock}>
                             <div className={styles.smCategoreis}>
-                                <div className={styles.smCategory}>
-
+                                <div className={styles.smCategory1}>
+                                    <b className={styles.categoryText}>Для него</b>
                                 </div>
-                                <div className={styles.smCategory}>
-
+                                <div className={styles.smCategory2}>
+                                    <b className={styles.categoryText}>Для неё</b>
                                 </div>
                             </div>
                             <div className={styles.lgCategory}>
-
+                                <b className={styles.categoryText}>Унисекс</b>
                             </div>
                         </div>  
                         <div className={styles.boxBlock}>
-
+                            <b className={styles.categoryText}>Аромабоксы</b>
                         </div>
                     </div>
             </div>

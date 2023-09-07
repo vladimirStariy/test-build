@@ -52,22 +52,57 @@
     gap: 32px;
 }
 
-.smCategory {
+.smCategory1 {
+    background-image: url('../../../../public/dropdown-navbar/1sm.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 32px;
     width: 280px;
     height: 250px;
-    background-color: red;
+}
+
+.smCategory2 {
+    background-image: url('../../../../public/dropdown-navbar/2sm.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 32px;
+    width: 280px;
+    height: 250px;
+    background-color: brown;
 }
 
 .lgCategory {
+    background-image: url('../../../../public/dropdown-navbar/3mm.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 32px;
     width: 592px;
     height: 250px;
-    background-color: aqua;
+    background-color: brown;
 }
 
 .boxBlock {
+    background-image: url('../../../../public/dropdown-navbar/4bm.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 32px;
     width: 592px;
     height: 532px;
-    background-color: blueviolet;
+    background-color: brown;
+}
+
+.categoryText {
+    padding-top: 32px;
+    padding-left: 32px;
+    color: #1E1E1E;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 28.8px */
 }
 
 @media only screen and (min-width: 726px) {
