@@ -1,0 +1,11 @@
+.deliveryPillsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.deliveryWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
