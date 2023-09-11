@@ -15,15 +15,13 @@ const DropDownLink: FC<IDropdown> = (props) => {
 
     const handleShow = () => {
         setShow(true);
-        console.log(show);
     }
 
     const handleHide = () => {
         setShow(false);
-        console.log(show);
     }
 
-    return <div onMouseOver={handleShow} onMouseOut={handleHide}>
+    return <div className={styles.parentBlock} onMouseOver={handleShow} onMouseOut={handleHide}>
         <Nav.Link 
             onClick={handleHide} 
 

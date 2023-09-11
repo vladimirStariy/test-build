@@ -54,6 +54,7 @@
 }
 
 .fullwidt {
+    position: relative;
     justify-content: center;
     width: 100%;
 }

@@ -16,6 +16,7 @@
     animation-duration: .6s;
     position: absolute;
     z-index: 999;
+    width: 100%;
     top: 39px;
     left: 0;
     right: 0;
@@ -110,23 +111,36 @@
         max-width: 694px;
         gap: 20px;
     }
+    .categoryText {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
     .categoriesBlock {
         gap: 20px;
     }
     .smCategoreis {
         gap: 20px;
     }
-    .smCategory {
+    .smCategory1 {
         width: 145px;
         height: 169px;
+        padding-top: 20px;
+    }
+    .smCategory2 {
+        width: 145px;
+        height: 169px;
+        padding-top: 20px;
     }
     .lgCategory {
         width: 313px;
         height: 169px;
+        padding-top: 20px;
     }
     .boxBlock {
         width: 357px;
         height: 362px;
+        padding-top: 20px;
     }
 }
 
@@ -139,7 +153,11 @@
         max-width: 1216px;
         gap: 32px;
     }
-    
+    .categoryText {
+        font-size: 24px;
+        padding-top: 32px;
+        padding-left: 32px;
+    }
     .categoriesBlock {
         gap: 32px;
     }
@@ -147,18 +165,25 @@
     .smCategoreis {
         gap: 32px;
     }
-    .smCategory {
+    .smCategory1 {
         width: 280px;
         height: 250px;
+        padding-top: 32px;
     }
-    
+    .smCategory2 {
+        width: 280px;
+        height: 250px;
+        padding-top: 32px;
+    }
     .lgCategory {
         width: 592px;
         height: 250px;
+        padding-top: 32px;
     }
     
     .boxBlock {
         width: 592px;
         height: 532px;
+        padding-top: 32px;
     }
 }

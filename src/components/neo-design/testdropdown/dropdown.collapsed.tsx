@@ -22,10 +22,10 @@ const DropDownCollapsedLink: FC<IDropdown> = (props) => {
             <div className={styles.categoriesWrapper}>
                     <div className={styles.categoriesContainer}>
                         <div className={styles.smCategoreis}>
-                            <div className={styles.smCategory}>
+                            <div className={styles.smCategory1}>
                                 <b className={styles.categoryText}>Для него</b>
                             </div>
-                            <div className={styles.smCategory}>
+                            <div className={styles.smCategory2}>
                                 <b className={styles.categoryText}>Для неё</b>
                             </div>
                         </div>
