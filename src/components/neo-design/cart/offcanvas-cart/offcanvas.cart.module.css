@@ -14,9 +14,7 @@
 
 .offcanvasWrapper {
     resize: none;
-    width: 608px;
-    max-width: 608px;
-    height: 200px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -35,14 +33,26 @@
 }
 
 .cartContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 448px;
+}
+
+.cartContentWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .overflowTest {
     overflow-y: auto;
+    height: 100%;
 }
 
 .offcanvasBody {
+    height: 100%;
     min-height: 0;
     --bs-offcanvas-padding-y: 0rem;
 }
@@ -50,9 +60,9 @@
 .cartProducts {
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 380px;
     gap: 2rem;
 }
 
@@ -64,10 +74,11 @@
 }
 
 .orderBlock {
-    bottom: 75px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .priceLabel {
@@ -77,6 +88,14 @@
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.cartTitle {
+    color: #1E1E1E;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 @media only screen and (max-width: 375px) {
@@ -121,24 +140,56 @@
         font-size: 24px;
         --bs-offcanvas-padding-y: 0rem;
         padding-top: 2rem;
-        padding-bottom: 20px;
     }
     .cartProducts {
         max-height: 360px;
     }
     .orderBlock {
-        padding-top: 40px;
+        
     }
 }
 
 @media only screen and (min-width: 726px) {
-    
+    .offcanvas {
+        --bs-offcanvas-width: 70%;
+        --bs-offcanvas-padding-x: 0;
+        --bs-offcanvas-padding-y: 2rem;
+        padding-right: 0rem;
+        max-width: none;
+    }
+    .backDrop {
+        top: 110px;
+    }
+    .cartHeader {
+        font-size: 32px;
+        --bs-offcanvas-padding-y: 0rem;
+        padding-top: 12px;
+    }
+    .cartContent {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media only screen and (min-width: 936px) {
-
+    .offcanvas {
+        --bs-offcanvas-width: 50%;
+        --bs-offcanvas-padding-x: 0;
+        --bs-offcanvas-padding-y: 2rem;
+        padding-right: 0rem;
+        max-width: none;
+    }
+    .offcanvasWrapper {
+        max-width: 608px;
+    }
+    
 }
 
 @media only screen and (min-width: 1248px) {
-
+    .cartContent {
+        padding-right: 0rem;
+    }
 }

@@ -27,18 +27,20 @@ const OffcanvasCart: FC<IOffcanvasCart> = (props) => {
         <Offcanvas style={screenSize.width > 726 ? {top: 110} : {top: 64}} backdropClassName={styles.backDrop} placement='end' show={show} onHide={handleClose} className={styles.offcanvas}>
             <div className={styles.offcanvasWrapper}>
                 <div className={`font-manrope ${styles.cartContent}`}>
-                    <Offcanvas.Header className={styles.cartHeader} closeButton>
-                        <Offcanvas.Title><b >Корзина</b></Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body className={styles.offcanvasBody}>
-                        <div className={styles.overflowTest}>
-                            <div className={styles.cartProducts}>
-                                <CartItem />
-                                <CartItem />
-                                <CartItem />
+                    <div className={styles.cartContentWrapper}>
+                        <Offcanvas.Header className={styles.cartHeader} closeButton>
+                            <Offcanvas.Title><b className={styles.cartTitle}>Корзина</b></Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body className={styles.offcanvasBody}>
+                            <div className={styles.overflowTest}>
+                                <div className={styles.cartProducts}>
+                                    <CartItem />
+                                    <CartItem />
+                                    <CartItem />
+                                </div>
                             </div>
-                        </div>
-                    </Offcanvas.Body>
+                        </Offcanvas.Body>
+                    </div>
                     <div className={styles.orderBlock}>
                         <b className={styles.priceLabel}>Итого: 88,50 BYN</b>
                         <TonightButton text='Оформить заказ' arrow/>
