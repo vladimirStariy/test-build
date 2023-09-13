@@ -16,7 +16,14 @@ const DropDownCollapsedLink: FC<IDropdown> = (props) => {
 
     return <div className={`${styles.liWrap} ${show ? styles.paddingTopActive : ''}`}>
         <div onClick={handleShow} className={props.class}>
-            Каталог
+            <div className={styles.catalogueLabel}>
+                <div>Каталог</div>
+                <div className={show ? styles.showed : styles.collapsed}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                        <path d="M5 6.5L0 0.5H10L5 6.5Z" fill="#1E1E1E"/>
+                    </svg>
+                </div>
+            </div>
         </div>
         <div className={`${styles.collapsedWrapper} ${show ? styles.show : styles.hide}`}>
             <div className={styles.categoriesWrapper}>

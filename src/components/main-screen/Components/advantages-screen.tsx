@@ -10,8 +10,10 @@ const AdvantagesScreen: FC = () => {
             <div className={styles.fbig}></div>
             <div className={styles.fsecbig}>
                 <div className={styles.fmid}></div>
-                <div className={styles.fsm1}></div>
-                <div className={styles.fsm2}></div>
+                <div className={styles.smWrapper}>
+                    <div className={styles.fsm1}></div>
+                    <div className={styles.fsm2}></div>
+                </div>
             </div>
         </div>
     </>

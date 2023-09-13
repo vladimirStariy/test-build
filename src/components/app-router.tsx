@@ -15,6 +15,7 @@ import NoveltiesScreen from './neo-design/novelties-screen/novelties.screen';
 import ProfileScreen from './neo-design/profile-screen/profile.screen';
 import TestScreen from './test-screen';
 import OrderingScreen from './neo-design/ordering-screen/ordering.screen';
+import ProductScreen from './neo-design/product-screen/product.screen';
 
 const AppRouter: FC = () => {
   const {pathname} = useLocation(); 
@@ -35,6 +36,7 @@ const AppRouter: FC = () => {
         <Route element={<NoveltiesScreen />} path='/novelties' />
         <Route element={<ProfileScreen />} path='/profile' />
         <Route element={<OrderingScreen />} path='/ordering' />
+        <Route element={<ProductScreen />} path='/product-screen' />
 
         <Route element={<TestScreen />} path='/test' />
 

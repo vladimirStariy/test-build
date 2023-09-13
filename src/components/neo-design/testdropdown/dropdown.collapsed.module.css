@@ -95,3 +95,24 @@
     padding-top: 17px;
     padding-left: 17px;
 }
+
+.catalogueLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.showed svg {
+    transform: rotate(-180deg);
+    transition: all .3s;
+}
+
+.collapsed svg {
+    transform: rotate(0deg);
+    transition: all .3s;
+}
