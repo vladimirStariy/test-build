@@ -28,7 +28,7 @@ const SwiperSlider = () => {
             injectStyles: [
                 `
                 .swiper-wrapper {
-                  background-color: blue;
+                  background-color: #F2F2F2;
                 }
                 .swiper-pagination-bullet {
                     position: relative;
@@ -71,6 +71,35 @@ const SwiperSlider = () => {
                     0% {width: 0;}
                     100% {width:100%;}
                 }
+                @media only screen and (max-width: 375px) {
+
+                }
+                
+                @media only screen and (min-width: 375px) {
+                    .swiper-pagination-bullet {
+                        width: 100px;
+                    }
+                    .swiper-custom-bullet {
+                        width: 100px;
+                    }
+                }
+                
+                @media only screen and (min-width: 726px) {
+                    .swiper-pagination-bullet {
+                        width: 176px;
+                    }
+                    .swiper-custom-bullet {
+                        width: 176px;
+                    }
+                }
+                
+                @media only screen and (min-width: 936px) {
+                    
+                }
+                
+                @media only screen and (min-width: 1248px) {
+                    
+                }
                 `,
             ],
         }
@@ -83,7 +112,14 @@ const SwiperSlider = () => {
         <>
             <swiper-container ref={swiperRef} init="false">
                 <swiper-slide><div className={styles.yellowSlide}></div></swiper-slide>
-                <swiper-slide><div className={styles.yellowSlide}></div></swiper-slide>
+                <swiper-slide>
+                    <div 
+                        className={styles.socialSlide}
+                        style={{backgroundImage: `url('${process.env.PUBLIC_URL}/slider/social/social.jpg')`}}
+                    >
+
+                    </div>
+                </swiper-slide>
                 <swiper-slide><div className={styles.yellowSlide}></div></swiper-slide>
             </swiper-container>
         </>

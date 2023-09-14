@@ -2,9 +2,8 @@ import { FC, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom'
 
 import LoginScreen from './auth/login-screen';
-import MainScreen from './main-screen/main-screen';
 
-import MainScreen2 from './neo-design/main-screen/main.screen';
+import MainScreen from './neo-design/main-screen/main.screen';
 
 import CatalogueScreen from './neo-design/catalogue-screen/catalogue.screen'
 import DeliveryScreen from './neo-design/delivery-screen/delivery.screen';
@@ -39,8 +38,6 @@ const AppRouter: FC = () => {
         <Route element={<ProductScreen />} path='/product-screen' />
 
         <Route element={<TestScreen />} path='/test' />
-
-        <Route element={<MainScreen2 />} path='/mainneo' />
 
         <Route path='*' element={<MainScreen />} />
     </Routes>

@@ -1,9 +1,13 @@
 import { FC } from "react";
 
 import layout from '../layout/layout.module.css';
+
 import SwiperSlider from "./Components/Main slider/swiper-slider";
 import Advantages from "./Components/advantages/advantages";
 import Questions from "./Components/questions/questions";
+import AnswerAccordion from "../../main-screen/Components/answers-accordion";
+import BrandSlider from "../../main-screen/Components/Brand slider/brand-slider";
+import ProductSlider from "../../main-screen/Components/Product slider/product-slider";
 
 
 const MainScreen: FC = () => {
@@ -11,7 +15,16 @@ const MainScreen: FC = () => {
         <SwiperSlider />
         <div className={layout.tonightWrapper}>
             <div className={layout.tonightContainer}>
+                <ProductSlider />
+            </div>
+            <div className={layout.tonightContainer}>
                 <Advantages />
+            </div>
+            <div className={layout.tonightContainer}>
+                <BrandSlider />
+            </div>
+            <div className={layout.tonightContainer}>
+                <AnswerAccordion />
             </div>
             <div className={layout.tonightContainer}>
                 <Questions />
