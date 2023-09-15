@@ -24,7 +24,7 @@ const ConsultationScreen: FC = () => {
                     <TonightButton text="Бесплатная консультация" onClick={handleShow}/>
                 </div>
             </div>
-
+            
             <Modal show={show} 
                    onHide={handleClose} 
                    aria-labelledby="contained-modal-title-vcenter"

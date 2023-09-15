@@ -37,6 +37,8 @@
 }
 
 .cardLabel {
+    display: flex;
+    justify-content: space-between;
     color: #1E1E1E;
     font-size: 40px;
     font-style: normal;

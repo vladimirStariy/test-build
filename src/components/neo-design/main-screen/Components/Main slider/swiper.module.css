@@ -151,27 +151,27 @@
         background-position: 0px 100%;
         background-repeat: no-repeat;
     }
+    .socialSlide {
+        height: 361px;
+        background-position: 33%;
+    }
 }
 
 @media only screen and (min-width: 936px) {
     .socialSlide {
         height: 500px;
-        background-size: cover;
-        background-position: -240px 0px;
+        background-position: 33%;
     }
 }
 
 @media only screen and (min-width: 1248px) {
     .yellowSlide {
-
         background-image: url(../../../../../../public/slider/Slide1.png);
         background-size: cover;
         background-position: 0px 100%;
         background-repeat: no-repeat;
     }
-
     .socialSlide {
-        background-size: cover;
         background-position: 50%;
     }
 }

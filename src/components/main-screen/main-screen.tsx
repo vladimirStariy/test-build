@@ -1,9 +1,9 @@
 import { FC } from "react";
 
 import SwiperSlider from "./Components/Slider/swiper-slider";
-import ProductSlider from "./Components/Product slider/product-slider";
+import ProductSlider from "../neo-design/main-screen/Components/product-slider/product-slider";
 import AdvantagesScreen from "./Components/advantages-screen";
-import BrandSlider from "./Components/Brand slider/brand-slider";
+import BrandSlider from "../neo-design/main-screen/Components/brand-slider/brand-slider";
 import AnswerAccordion from "./Components/answers-accordion";
 import ConsultationScreen from "./Components/Consultation screen/consultation-screen";
 

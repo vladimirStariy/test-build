@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import styles from '../../../styles/main-screen-modules/brand.card.module.css';
+import styles from './brand.card.module.css';
 import { Link } from "react-router-dom";
 
 const BrandCard: FC = () => {

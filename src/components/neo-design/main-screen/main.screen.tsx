@@ -6,8 +6,8 @@ import SwiperSlider from "./Components/Main slider/swiper-slider";
 import Advantages from "./Components/advantages/advantages";
 import Questions from "./Components/questions/questions";
 import AnswerAccordion from "../../main-screen/Components/answers-accordion";
-import BrandSlider from "../../main-screen/Components/Brand slider/brand-slider";
-import ProductSlider from "../../main-screen/Components/Product slider/product-slider";
+import BrandSlider from "./Components/brand-slider/brand-slider";
+import ProductSlider from "./Components/product-slider/product-slider";
 
 
 const MainScreen: FC = () => {

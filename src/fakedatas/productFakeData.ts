@@ -5,6 +5,8 @@ export const fakeData = [
         brand: "fake_brand",
         price: 20,
         image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        discount: true,
+        discountValue: 10,
         isNovelty: false,
         forOrder: true,
     },

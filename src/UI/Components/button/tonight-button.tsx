@@ -9,7 +9,7 @@ interface IButton extends HTMLAttributes<HTMLButtonElement> {
 
 const TonightButton: FC<IButton> = ({children, ...props}) => {
     return <>
-        <button className={props.arrow ? styles.tonightButton : styles.tonightButtonSimple}>
+        <button className={props.arrow ? styles.tonightButton : styles.tonightButtonSimple} {...props}>
             {props.text}
             {props.arrow ? 
                 <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">

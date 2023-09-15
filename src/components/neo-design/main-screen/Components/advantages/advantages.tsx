@@ -6,7 +6,7 @@ import layout from '../../../layout/layout.module.css'
 const Advantages: FC = () => {
     
     return <>
-        <h1 className={styles.cardLabel}><b>Преимущества покупки парфюма в роспив</b></h1>
+        <h1 className={layout.cardLabel}>Преимущества покупки парфюма в роспив</h1>
         <div className={styles.fgrid}>
             <div className={styles.fbig}>Возможность собрать собственную <br /> <b className={styles.purple}>коллекцию</b> ароматов на все случаи жизни</div>
             <div className={styles.fsecbig}>

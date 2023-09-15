@@ -32,10 +32,9 @@ const ProductGrid: FC<IProductGrid> = props => {
                 </>
                 :
                 <>
-                    
-                        {fakeData.map((item) => (
-                            <ProductCard key={item.id} {...item}/>
-                        ))}
+                    {fakeData.map((item) => (
+                        <ProductCard key={item.id} {...item}/>
+                    ))}
                 </>)
         }
         </div>

@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
 
+import layout from '../../../layout/layout.module.css'
+
 import BrandCard from "./brand-card";
-import styles from '../../../styles/main-screen-modules/brand.slider.module.css'
-import TonightArrowGroup from "../../../../UI/Components/arrow-group/tonight-arrow-group";
-import useScreenSize from "../../../utils/use-screen-size";
+import TonightArrowGroup from "../../../../../UI/Components/arrow-group/tonight-arrow-group";
+import useScreenSize from "../../../../utils/use-screen-size";
 
 register();
 
@@ -31,15 +32,11 @@ const BrandSlider = () => {
                     slidesPerView: 1.5,
                     spaceBetween: 24,
                 },
-                600: {
+                726: {
                     slidesPerView: 3,
                     spaceBetween: 24,
                 },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                },
-                1200: {
+                1248: {
                     slidesPerView: 4,
                     spaceBetween: 32,
                 },
@@ -57,16 +54,16 @@ const BrandSlider = () => {
     }, []);
 
     return <>
-            <div className='header-block'>
-                <h1 className='block-title'><b>Бренды</b></h1>
-                
-                {screenSize.width <= 600 ? <></> :
+            <div className={layout.cardLabel}>
+                Бренды
+                {screenSize.width <= 725 ? <></> :
                     <TonightArrowGroup
                         prevHandle={handlePrev}
                         nextHandle={handleNext}
                     />   
                 }
             </div>
+
             <swiper-container ref={swiperRef} init="false">
                 <swiper-slide><BrandCard /></swiper-slide>
                 <swiper-slide><BrandCard /></swiper-slide>

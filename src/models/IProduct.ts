@@ -4,4 +4,6 @@ export interface IProduct {
     brand: string;
     price: number;
     image: string;
+    discount?: boolean;
+    discountValue?: number;
 }

@@ -1,10 +1,16 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 import styles from './questions.module.css';
-import layout from '../../../layout/layout.module.css'
+
 import TonightButton from "../../../../../UI/Components/button/tonight-button";
+import QuestionsModal from "./questions.modal";
+import { Button, Modal } from "react-bootstrap";
 
 const Questions: FC = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     
     return <>
         <div className={styles.questionsBlock}>
@@ -18,8 +24,10 @@ const Questions: FC = () => {
                     </div>
                 </div>
                 <div className={styles.buttonBlock}>
-                    <TonightButton text="Бесплатная консультация" />
+                    <TonightButton onClick={handleShow} text="Бесплатная консультация" />
                 </div>
+
+                <QuestionsModal show={show} handleClose={handleClose} />
             </div>
         </div>
     </>
